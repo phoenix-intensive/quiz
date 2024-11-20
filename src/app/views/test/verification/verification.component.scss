@@ -1,0 +1,141 @@
+.test {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  .title-test {
+    display: flex;
+    align-items: center;
+
+    .mini-title {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      color: #dcdcf3;
+
+      img {
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+    }
+
+    .test-pre-title {
+      font-size: 20px;
+      color: #dcdcf3;
+    }
+  }
+
+  .test-question-title-result {
+    font-family: "Museo Sans Cyrl Bold", sans-serif;
+    font-size: 57px;
+    margin-top: 60px;
+
+    span {
+      color: #6933dc;
+    }
+
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .test-question-title {
+    font-family: "Museo Sans Cyrl Bold", sans-serif;
+    font-size: 36px;
+
+    span {
+      color: #6933dc;
+    }
+  }
+
+  .test-question-options {
+    margin-top: 20px;
+    min-height: 180px;
+
+    .test-question-option {
+      font-size: 20px;
+      margin-bottom: 20px;
+      display: flex;
+
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .pass-question {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+    a {
+      font-size: 17px;
+      color: #6933dc;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        margin-left: 13px;
+      }
+    }
+  }
+}
+
+
+/*Кастомные радио-инпуты*/
+input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #6933dc;
+  border-radius: 50%;
+  margin: 0 13px 0 0;
+  transform: translateY(2px);
+
+
+  display: grid;
+  place-content: center;
+}
+
+input[type='radio']::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: inset 10px 10px #6933dc;
+  transition: .2s ease transform;
+  transform: scale(0);
+
+}
+
+input[type='radio']:checked::before {
+  transform: scale(1);
+
+}
+
+
+.bor {
+  color: #4b299b;
+}
+
+
+
+
+
+
+
+
+
+
+
+

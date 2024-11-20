@@ -1,0 +1,19 @@
+<section class="result">
+  <div class="container">
+    <div class="result-image">
+      <img src="assets/images/questionmarks.png" alt="questionmarks">
+    </div>
+    <div class="result-title big-title">
+      Ура! Ты прошёл тест! <span>Твой результат:</span>
+    </div>
+    <div class="result-score" id="result-score">
+      {{result}}
+    </div>
+  </div>
+  <div class="verification-question">
+    <a href="javascript:void(0)" id="verification" (click)="onVerification(id)">Посмотреть правильные ответы
+      <img src="assets/images/small-arrow.png" alt="small-arrow"></a>
+  </div>
+
+</section>
+
